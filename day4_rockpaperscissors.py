@@ -36,10 +36,12 @@ selection_lower = selection.lower()
 
 if  selection_lower == 'rock':
     print(f"You: {rock}")
-if selection_lower == 'paper':
+elif selection_lower == 'paper':
     print(f"You: {paper}")
-if selection_lower == 'scissors':
+elif selection_lower == 'scissors':
     print(f"You: {scissors}")
+else:
+    print("Invalid selection, You lose")
 
 random_choice = random.choice(choices)
 
